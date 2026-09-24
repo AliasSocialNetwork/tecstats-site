@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tecstats</title>
+<style>
+  :root { --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --page: #f8fafc; --card: #ffffff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--page); }
+  header { background: var(--card); border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header .wrap { display: flex; align-items: center; gap: 10px; height: 64px; font-weight: 800; font-size: 20px; }
+  header .mark { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; background: #ef4444; color: #0b0c10; font-size: 17px; }
+  main.wrap { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 36px; padding-top: 36px; padding-bottom: 56px; }
+  article { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 30px; }
+  article h1 { font-size: 30px; line-height: 1.25; margin: 0 0 14px; }
+  article p { margin: 0 0 14px; }
+  aside .label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .slot { width: 300px; min-height: 250px; }
+  footer { color: var(--muted); font-size: 13px; padding: 0 20px 40px; text-align: center; }
+  @media (max-width: 760px) {
+    main.wrap { grid-template-columns: 1fr; }
+    aside { justify-self: center; }
+  }
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="mark" aria-hidden="true">T</span>Tecstats</div></header>
+<main class="wrap">
+  <article>
+    <h1>A test page for the Tecstats ad slot</h1>
+    <p>The space on the right is the 300 x 250 slot from the Tecstats ad portal, pasted in exactly as the setup screen hands it out. Nothing else on this page is real.</p>
+    <p>When no advertiser has booked the slot, it shows whatever the slot is set to show while it is unsold: the Advertise card, the site's own ad code, or nothing at all.</p>
+    <p>Want your ad here? The Advertise card in the slot opens the sign-up page.</p>
+  </article>
+  <aside>
+    <p class="label">Advertisement</p>
+    <div class="slot">
+<!-- pyrobidjs zone placement r9GIGdO-fdw7W2B-6rybIRa-30QKQET -->
+<ins class="pyrobidjs">
+    <ins class="pyrobidjs-placement"></ins>
+    <script type="text/javascript">
+        if (!window.PyrobidJs) {
+            (function () {
+                var s = document.createElement('script');
+                s.async = true;
+                s.type = 'text/javascript';
+                s.src = 'https://tecstats.pyrobid.com/adserve/app';
+                var n = document.getElementsByTagName("script")[0];
+                n.parentNode.insertBefore(s, n);
+            }());
+        }
+    </script>
+    <script type="text/javascript">
+        var PyrobidJs = PyrobidJs || {};
+        PyrobidJs.ads = PyrobidJs.ads || [];
+        PyrobidJs.ads.push({
+            node: document.currentScript.parentElement,
+            handler: function (node) {
+                var banner = PyrobidJs.createBanner(node, 'r9GIGdO-fdw7W2B-6rybIRa-30QKQET', [300, 250], null, []);
+                PyrobidJs.showBanner(banner.index);
+            }
+        });
+    </script>
+</ins>
+<!-- end of pyrobidjs zone placement -->
+    </div>
+  </aside>
+</main>
+<footer>tecstats.com</footer>
+</body>
+</html>
